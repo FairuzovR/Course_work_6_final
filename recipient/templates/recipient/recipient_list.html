@@ -1,0 +1,19 @@
+{% extends 'recipient/base.html' %}
+{% block content %}
+<div class="row text-center m-3 d-flex justify-content-center">
+    {% for recipient in object_list %}
+        {% if user == recipient.owner or user.is_superuser or perms.recipient.can_view_client %}
+            <div class="card m-4 rounded-3 shadow-sm col-3">
+                <div class="card-header py-3">
+                    <h2 class="my-0 fw-normal">{{ recipient.name }} ({{ recipient.email }})</h2>
+                </div>
+                <div class="card-body">
+                    <p>{{ recipient.description|slice:100 }}</p>
+                    <a href="{% url 'recipient:view' recipient.pk %}" type="button"
+                   class="btn btn-outline-dark">Подробнее</a>
+                </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

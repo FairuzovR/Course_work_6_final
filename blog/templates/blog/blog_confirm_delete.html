@@ -1,0 +1,15 @@
+{% extends 'recipient/base.html' %}
+{% block content %}
+<div class="container d-flex justify-content-center text-center">
+    <div class="card w-50">
+        <div class="card-body">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <p>Хотите удалить отзыв "{{ object.title }}"?</p>
+                <button type="submit" class="btn btn-danger">Удалить</button>
+                <a class="btn btn-dark" href="{% url 'blog:list' %}" role="button">Отмена</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

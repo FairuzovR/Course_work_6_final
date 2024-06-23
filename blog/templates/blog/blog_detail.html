@@ -1,0 +1,19 @@
+{% extends 'recipient/base.html' %}
+{% block content %}
+{% load my_tags %}
+    <div class="container text-center mb-5">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="my-0 font-weight-normal">{{ object.title }}</h4>
+                {% if object.image %}
+                <div class="img-container">
+                    <img class="card-img-top mb-3 p-2" src="{{ object.image | media_filter }}" alt="" style='width: 400px; height: 400px;object-fit: cover;object-position: center;'>
+                </div>
+                {% endif %}
+                <p>{{ object.body }}</p>
+                Просмотры: {{ object.view_count }}
+                <a class="btn btn-outline-dark w-100 mt-2 mb-2" href="{% url 'blog:list' %}" role="button">Назад</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

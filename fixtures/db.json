@@ -1,0 +1,1001 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-06-21T14:52:05.385Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "manager#1@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 4,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 4,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 4,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 4,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 5,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 5,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 5,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 5,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add Настройка рассылки",
+        "content_type": 6,
+        "codename": "add_mailingsettings"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change Настройка рассылки",
+        "content_type": 6,
+        "codename": "change_mailingsettings"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete Настройка рассылки",
+        "content_type": 6,
+        "codename": "delete_mailingsettings"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view Настройка рассылки",
+        "content_type": 6,
+        "codename": "view_mailingsettings"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can view malling",
+        "content_type": 6,
+        "codename": "can_view_malling"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can edit malling",
+        "content_type": 6,
+        "codename": "can_edit_malling"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete malling",
+        "content_type": 6,
+        "codename": "can_delete_malling"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can add Статус отправки",
+        "content_type": 7,
+        "codename": "add_mailingstatus"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can change Статус отправки",
+        "content_type": 7,
+        "codename": "change_mailingstatus"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can delete Статус отправки",
+        "content_type": 7,
+        "codename": "delete_mailingstatus"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can view Статус отправки",
+        "content_type": 7,
+        "codename": "view_mailingstatus"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can add Сообщение",
+        "content_type": 8,
+        "codename": "add_mailingmessage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can change Сообщение",
+        "content_type": 8,
+        "codename": "change_mailingmessage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can delete Сообщение",
+        "content_type": 8,
+        "codename": "delete_mailingmessage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can view Сообщение",
+        "content_type": 8,
+        "codename": "view_mailingmessage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view message",
+        "content_type": 8,
+        "codename": "can_view_message"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can edit message",
+        "content_type": 8,
+        "codename": "can_edit_message"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can delete message",
+        "content_type": 8,
+        "codename": "can_delete_message"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can add Получатель",
+        "content_type": 9,
+        "codename": "add_recipient"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can change Получатель",
+        "content_type": 9,
+        "codename": "change_recipient"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can delete Получатель",
+        "content_type": 9,
+        "codename": "delete_recipient"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can view Получатель",
+        "content_type": 9,
+        "codename": "view_recipient"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can view recipient",
+        "content_type": 9,
+        "codename": "can_view_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can delete recipient",
+        "content_type": 9,
+        "codename": "can_delete_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can edit recipient",
+        "content_type": 9,
+        "codename": "can_edit_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can add django job",
+        "content_type": 10,
+        "codename": "add_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can change django job",
+        "content_type": 10,
+        "codename": "change_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can delete django job",
+        "content_type": 10,
+        "codename": "delete_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can view django job",
+        "content_type": 10,
+        "codename": "view_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can add django job execution",
+        "content_type": 11,
+        "codename": "add_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can change django job execution",
+        "content_type": 11,
+        "codename": "change_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can delete django job execution",
+        "content_type": 11,
+        "codename": "delete_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can view django job execution",
+        "content_type": 11,
+        "codename": "view_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can add пользователь",
+        "content_type": 12,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can change пользователь",
+        "content_type": 12,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can delete пользователь",
+        "content_type": 12,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can view пользователь",
+        "content_type": 12,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can add блог",
+        "content_type": 13,
+        "codename": "add_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can change блог",
+        "content_type": 13,
+        "codename": "change_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can delete блог",
+        "content_type": 13,
+        "codename": "delete_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can view блог",
+        "content_type": 13,
+        "codename": "view_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Права на изменение блога",
+        "content_type": 13,
+        "codename": "can_edit_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Права на удаление блога",
+        "content_type": 13,
+        "codename": "can_delete_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Права на добавление блога",
+        "content_type": 13,
+        "codename": "can_add_blog"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "mailing",
+        "model": "mailingsettings"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "mailing",
+        "model": "mailingstatus"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "mailing",
+        "model": "mailingmessage"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "recipient",
+        "model": "recipient"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "django_apscheduler",
+        "model": "djangojob"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "django_apscheduler",
+        "model": "djangojobexecution"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "users",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "blog",
+        "model": "blog"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "bew1j8csk13t951gvvvydnpbgf9bf0o7",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCQ0pm6dN8zkGEYpGpoUtqV8e7apAvd_vfef6lA21rC1mQJU1IX5dTpd4vED6k7SHeqt1nzXNdlinpX9EGbHuckz-vh_h0UauVbG6bBOLDpTNZjF8VGJiNg0IkbovdZsAfGHE2H7DJm9uiAAXoQ6416fwDiaTeu:1sKfbu:gEcVAs7DZdR04IqnN-nsn1LFzcWvYnIgurcy9ya31R4",
+        "expire_date": "2024-07-05T14:51:30.525Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "me89kg5lla8rprcngycnw0q654es6ku8",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQRO_iGlnrT2Sbkp4zWLvrFQ6gWIqTKuLuJFIKaKaY92Y2lXFdal67zHks6qqMuvx2hPyS6QDlidOjaW7TMo-kD0WftOt7K_K-ne7fQcVe97UFFraEEB0XpADOo5CNPg02UBoC7Gl8YSceGBJI9CUZMsA-phTV5wvllDdn:1sKfaG:bRH43RfijXgP-iCUNm28JuUYsKMJETO5dR7IfOd2UFo",
+        "expire_date": "2024-07-05T14:49:48.586Z"
+    }
+},
+{
+    "model": "mailing.mailingmessage",
+    "pk": 1,
+    "fields": {
+        "title": "Отчет о доходах и расходах",
+        "content": "Отчет о доходах и расходах\r\nI. Доходы\r\nЗа последний отчетный период компания достигла значительного роста доходов. Основные источники доходов включают:\r\n\r\nПродажи продуктов:\r\n\r\nОбщий объем продаж продуктов составил 10 млн рублей, что на 15% больше по сравнению с предыдущим периодом. Это связано с успешными маркетинговыми кампаниями и расширением ассортимента.\r\nУслуги:\r\n\r\nДоходы от предоставления услуг составили 4 млн рублей. Здесь также наблюдается рост на 10%, что объясняется увеличением спроса на наши консалтинговые и технические услуги.\r\nИнвестиции и дивиденды:\r\n\r\nПассивный доход от инвестиций и дивидендов составил 1 млн рублей, что на 5% больше, чем в предыдущем периоде, благодаря выгодным инвестиционным решениям и улучшенной дивидендной политике.\r\nII. Расходы\r\nРасходы компании за отчетный период также увеличились, однако их рост был ниже роста доходов, что свидетельствует о повышении эффективности управления затратами. Основные статьи расходов включают:\r\n\r\nОперационные расходы:\r\n\r\nОбщие операционные расходы составили 8 млн рублей. В эту категорию входят расходы на аренду, коммунальные услуги, зарплаты и другие текущие затраты. Рост на 10% по сравнению с предыдущим периодом объясняется расширением штата и увеличением объемов производства.\r\nМаркетинг и реклама:\r\n\r\nЗатраты на маркетинг и рекламу составили 2 млн рублей, что на 20% больше, чем в прошлом периоде. Увеличение связано с активизацией рекламных кампаний для продвижения новых продуктов и услуг.\r\nНаучно-исследовательские и опытно-конструкторские работы (НИОКР):\r\n\r\nРасходы на НИОКР составили 1 млн рублей. Несмотря на значительный рост в 25%, эти инвестиции оправданы, так как способствуют долгосрочному развитию компании и улучшению конкурентоспособности.\r\nIII. Итоги\r\nИтоговый чистый доход компании за отчетный период составил 4 млн рублей, что на 33% больше по сравнению с предыдущим периодом. Это свидетельствует о здоровом финансовом состоянии компании и успешном управлении доходами и расходами. Компания продолжит инвестировать в ключевые области для поддержания устойчивого роста и повышения рентабельности.",
+        "owner": 4
+    }
+},
+{
+    "model": "mailing.mailingmessage",
+    "pk": 2,
+    "fields": {
+        "title": "Разработка новой маркетинговой стратегии",
+        "content": "I. Введение\r\nВ условиях высококонкурентного рынка компаниям необходимо постоянно адаптировать свои маркетинговые стратегии, чтобы оставаться на вершине и привлекать новых клиентов. Наша компания провела тщательный анализ текущих маркетинговых тенденций и разработала новую стратегию, направленную на увеличение узнаваемости бренда и расширение клиентской базы.\r\n\r\nII. Анализ текущего состояния\r\nПозиционирование бренда:\r\n\r\nНаш бренд занимает уверенные позиции на рынке, однако исследования показывают, что существует значительный потенциал для повышения его узнаваемости среди целевой аудитории.\r\nЦелевая аудитория:\r\n\r\nОсновная часть нашей клиентской базы составляет возрастная группа 25-40 лет. Однако есть возможность расширить охват за счет привлечения молодежной аудитории и старших возрастных групп, которые могут быть заинтересованы в наших продуктах и услугах.\r\nКонкурентный анализ:\r\n\r\nНаши конкуренты активно используют цифровые каналы для продвижения, что позволяет им достигать широкой аудитории. Мы должны адаптироваться к этим изменениям и улучшить наше присутствие в цифровом пространстве.",
+        "owner": 4
+    }
+},
+{
+    "model": "mailing.mailingmessage",
+    "pk": 3,
+    "fields": {
+        "title": "Развитие и инновации в машиностроении",
+        "content": "I. Введение\r\nМашиностроение играет ключевую роль в развитии промышленности, обеспечивая производство разнообразных машин, оборудования и технологий. В условиях быстрого технологического развития и глобализации компании в этой отрасли вынуждены постоянно совершенствовать свои процессы и продукты, чтобы оставаться конкурентоспособными.\r\n\r\nII. Актуальные технологические тренды\r\nИспользование новейших материалов и технологий производства:\r\n\r\nСовременные компании в машиностроении активно внедряют композитные материалы, 3D-печать и роботизированные системы сборки. Эти технологии позволяют снизить вес и улучшить производственные характеристики изделий.\r\nЦифровизация и Индустрия 4.0:\r\n\r\nМашиностроительные предприятия внедряют цифровые двойники, интернет вещей (IoT) и аналитику данных для оптимизации производственных процессов и предсказательного обслуживания оборудования.\r\nЭкологические технологии и устойчивое производство:\r\n\r\nКомпании в машиностроении активно разрабатывают экологически чистые технологии, направленные на снижение отходов, энергопотребления и воздействия на окружающую среду.\r\n\r\nIII. Вызовы и перспективы\r\nГлобальная конкуренция:\r\n\r\nМировой рынок машиностроения стал более конкурентоспособным из-за входа новых игроков из разных стран. Это требует от компаний разработки уникальных стратегий продвижения и дифференциации продукции.\r\nНедостаток квалифицированных кадров:\r\n\r\nОдним из основных вызовов для отрасли является дефицит специалистов высокой квалификации, способных работать с новейшими технологиями. Компании в машиностроении активно инвестируют в обучение и развитие персонала.\r\n\r\nIV. Заключение\r\nМашиностроение продолжает быть ключевой отраслью экономики, внося значительный вклад в технологический прогресс и индустриальное развитие. Компании в этой сфере должны оставаться на передовой в области инноваций и устойчивого развития, чтобы успешно конкурировать на мировом рынке.",
+        "owner": 2
+    }
+},
+{
+    "model": "mailing.mailingmessage",
+    "pk": 4,
+    "fields": {
+        "title": "Изготовление фейерверков: технологии и безопасность",
+        "content": "I. Введение\r\nИзготовление фейерверков является искусством, требующим высокой технической оснащенности и строгого соблюдения безопасности. Эта отрасль сочетает в себе химическую инженерию, пиротехнику и творческий дизайн для создания визуально потрясающих эффектов в воздухе.\r\n\r\nII. Технологии производства\r\nХимические компоненты и их свойства:\r\n\r\nОсновные компоненты фейерверков - это порошки и смеси различных химических веществ, которые определяют цвет и эффект взрыва. Используемые химические формулы разрабатываются с учетом безопасности и эффективности.\r\nКонструктивные решения и дизайн:\r\n\r\nФейерверки создаются с использованием специальных конструкций и устройств, которые обеспечивают безопасное распространение эффектов в воздухе. Дизайн учитывает визуальные и звуковые аспекты, создавая уникальные представления.\r\n\r\nIII. Безопасность и регулирование\r\nСтандарты безопасности и законодательные требования:\r\n\r\nИзготовление фейерверков строго регулируется международными и национальными стандартами безопасности. Компании, занимающиеся этой отраслью, должны соблюдать правила хранения, транспортировки и использования пиротехнических материалов.\r\nОбучение и сертификация персонала:\r\n\r\nСпециалисты, работающие в производстве фейерверков, проходят специальное обучение по безопасности и технологиям. Сертификация подтверждает их квалификацию и знание профессиональных стандартов.\r\n\r\nIV. Перспективы и вызовы\r\nИнновации в эффектах и технологиях:\r\n\r\nОтрасль фейерверков постоянно развивается, внедряя новые эффекты и технологии, такие как дистанционное управление и программирование показа. Это позволяет создавать более сложные и впечатляющие представления.\r\nЭкологические аспекты и устойчивое производство:\r\n\r\nСовременные компании фейерверков активно работают над снижением экологического влияния производственных процессов и внедрением устойчивых практик.\r\n\r\nV. Заключение\r\nИзготовление фейерверков требует высокой профессиональной подготовки, строгого соблюдения безопасности и инновационного подхода к созданию эффектов. Эта отрасль продолжает удивлять и вдохновлять своими визуальными и аудиовизуальными представлениями по всему миру.",
+        "owner": 2
+    }
+},
+{
+    "model": "mailing.mailingsettings",
+    "pk": 1,
+    "fields": {
+        "first_datetime": "2024-06-21T14:49:09.085Z",
+        "end_time": null,
+        "sending": "daily",
+        "message": 3,
+        "setting_status": "Create",
+        "owner": 2,
+        "recipients": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "mailing.mailingsettings",
+    "pk": 2,
+    "fields": {
+        "first_datetime": "2024-06-21T14:49:32.680Z",
+        "end_time": null,
+        "sending": "daily",
+        "message": 1,
+        "setting_status": "Create",
+        "owner": 4,
+        "recipients": [
+            3
+        ]
+    }
+},
+{
+    "model": "recipient.recipient",
+    "pk": 1,
+    "fields": {
+        "email": "recip_test#1@su.su",
+        "name": "Recip#1",
+        "description": "Он обладает решительным характером и выраженными лидерскими качествами. В общении проявляет четкость и ясность мысли, умеет аргументировать свои позиции и убеждать собеседников. Бизнесмен привык работать в условиях высокой ответственности и стресса, способен принимать решения быстро и эффективно.\r\n\r\nЕго расписание наполнено встречами, переговорами и деловыми встречами, что подчеркивает его занятость и организаторские способности. В то же время, он находит время для стратегических размышлений и анализа текущих рыночных трендов, что позволяет ему успешно управлять своим бизнесом и добиваться поставленных целей.",
+        "owner": 2
+    }
+},
+{
+    "model": "recipient.recipient",
+    "pk": 2,
+    "fields": {
+        "email": "recip_test#2@su.su",
+        "name": "Recip#2",
+        "description": "Художник часто предпочитает непринужденный стиль одежды, который отражает его индивидуальность и креативный подход к жизни. Его взгляд часто устремлен вглубь, полон мыслей и идей.\r\n\r\nОн умеет передавать свои эмоции и мысли через различные художественные техники: мазки кисти, игру света и тени, цветовую гамму. В работах художника отразился его внутренний мир, его восприятие красоты и гармонии.\r\n\r\nХудожник может работать как в уединении своего ателье, так и на открытой природе, находя в каждом месте и моменте потенциал для творчества. Он умеет видеть прекрасное в обыденных вещах и событиях, что делает его искусство уникальным и привлекательным для зрителей.",
+        "owner": 2
+    }
+},
+{
+    "model": "recipient.recipient",
+    "pk": 3,
+    "fields": {
+        "email": "recip_test#3@su.su",
+        "name": "Recip#3",
+        "description": "Строитель хорошо знает свою работу и способен оперативно решать технические задачи, связанные с строительством. Он организован и дисциплинирован в работе, умеет работать в команде с другими строителями и специалистами.\r\n\r\nВ своей профессиональной деятельности строитель может сталкиваться с различными трудностями и вызовами, такими как изменяющиеся погодные условия или неожиданные технические проблемы, но он готов к ним и способен быстро находить оптимальные решения.\r\n\r\nСтроитель также может быть креативным в поиске новых технических решений и улучшении процессов работы на строительной площадке. Его работа важна для развития инфраструктуры и улучшения жилых и коммерческих объектов, что делает его неотъемлемой частью современного общества.",
+        "owner": 4
+    }
+},
+{
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$lHmU1GLFpbS4BF8mnQ61uA$XuxrbkixIFVuvcRTx9DCfAtsAKuc2jLsZ9TQY/Uungg=",
+        "last_login": "2024-06-21T14:49:48.585Z",
+        "is_superuser": true,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-06-20T11:32:36.673Z",
+        "email": "su_admin@gmail.com",
+        "phone": "",
+        "avatar": "users/93bcf27cb829e48b0dac68274f20ebf1_yGixZqV.jpg",
+        "country": "Russia",
+        "token": "008344464657132eb8245b87ca5844a6",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$nwaR6XhCCzbb9mU0doW0hx$jKx/OggSczT4sPZobYx803w3ZBSf1ynC0OQzioqhk68=",
+        "last_login": "2024-06-21T14:47:06.275Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-06-20T19:47:09.300Z",
+        "email": "default_user@yandex.ru",
+        "phone": "",
+        "avatar": "users/93bcf27cb829e48b0dac68274f20ebf1.jpg",
+        "country": "Russia",
+        "token": "66e5e0f115d0209d8ff72491339e1952",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$t10VTunWXMGmh3WaUvaxu4$Nge+v5s03XxB0ccuvLls7TtN2BJ+WTyzndngM5aIQtk=",
+        "last_login": "2024-06-21T14:51:30Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-06-21T11:32:20Z",
+        "email": "manager#1@yandex.ru",
+        "phone": null,
+        "avatar": "",
+        "country": null,
+        "token": "47294d68e775e40b4c39835e61bb6d20",
+        "groups": [],
+        "user_permissions": [
+            27,
+            25,
+            44,
+            43
+        ]
+    }
+},
+{
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$JHEaQreT3vogt8idBk5yvh$aIAjUge0IxT87ZbUtSX2ohpc7A8Oy/B1cCv3lOV6FrI=",
+        "last_login": "2024-06-21T14:49:24.744Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-06-21T12:23:29.161Z",
+        "email": "default_user#2@gmail.com",
+        "phone": null,
+        "avatar": "",
+        "country": null,
+        "token": "5839968eac07b11574b064c0b50e3a75",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 1,
+    "fields": {
+        "title": "Blog #1",
+        "body": "Контент из 1 блога",
+        "image": "blog/51d45d570a7511676faf42cb846e5813.jpg",
+        "create_at": "2024-06-20T14:43:53.481Z",
+        "is_published": true,
+        "view_count": 9,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 2,
+    "fields": {
+        "title": "Blog #2",
+        "body": "Контент из 2 блога",
+        "image": "blog/wp5612079-anime-pc-full-hd-death-note-wallpapers.jpg",
+        "create_at": "2024-06-20T17:27:11.050Z",
+        "is_published": true,
+        "view_count": 10,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 3,
+    "fields": {
+        "title": "Blog #3",
+        "body": "Контент из 3 блога",
+        "image": "blog/1c8684b06bc7ad1e1f6b7b0099d87300.jpg",
+        "create_at": "2024-06-20T17:27:14.846Z",
+        "is_published": true,
+        "view_count": 5,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 4,
+    "fields": {
+        "title": "Blog #4",
+        "body": "Контент из 4 блога",
+        "image": "blog/js.jpg",
+        "create_at": "2024-06-20T17:27:18.454Z",
+        "is_published": true,
+        "view_count": 6,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 5,
+    "fields": {
+        "title": "Blog #5",
+        "body": "Контент из 5 блога",
+        "image": "blog/head_wallpaper2_GbqrcXI.jpg",
+        "create_at": "2024-06-20T17:27:23.756Z",
+        "is_published": true,
+        "view_count": 3,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 6,
+    "fields": {
+        "title": "Blog #6",
+        "body": "Контент из 6 блога",
+        "image": "blog/46ef500ca8dc42ac7f963d490f0dce4c.jpg",
+        "create_at": "2024-06-20T17:27:27.993Z",
+        "is_published": true,
+        "view_count": 7,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 7,
+    "fields": {
+        "title": "Blog #7",
+        "body": "Контент из 7 блога",
+        "image": "blog/7a444cf63feabb08f3b75550cfdefe07.jpg",
+        "create_at": "2024-06-20T17:27:32.981Z",
+        "is_published": true,
+        "view_count": 6,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 8,
+    "fields": {
+        "title": "Blog #8",
+        "body": "Контент из 8 блога",
+        "image": "blog/35eef24242a32f5e0b958b5ffee48b2c_xP0xWzk.jpg",
+        "create_at": "2024-06-20T17:27:38.845Z",
+        "is_published": true,
+        "view_count": 4,
+        "owner": 1
+    }
+}
+]

@@ -1,0 +1,13 @@
+users_fx 
+->
+blogs_fx 
+->
+messages_fx 
+->
+recipients_fx 
+->
+mallings_fx 
+
+Либо сразу db
+
+cmd: python manage.py loaddata fixtures/some_name.json

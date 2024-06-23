@@ -1,0 +1,46 @@
+<div class='container mb-4'>
+    <ul class="nav nav-underline justify-content-center">
+        {% if user.is_authenticated %}
+        {% comment %} Добавление хедера на страницу как include-шаблон, ниже проверка с какого представления страница рендериться и, соответственно, ставит активное состояние {% endcomment %}
+        <li class="nav-item">
+            <a class="nav-item nav-link link-body-emphasis {% if request.resolver_match.view_name == 'mailing:home' %}active{% endif %}" href="{% url 'mailing:home' %}">Главная</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-item nav-link link-body-emphasis {% if request.resolver_match.view_name == 'recipient:list' %}active{% endif %}" href="{% url 'recipient:list' %}">Все получатели</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-item nav-link link-body-emphasis {% if request.resolver_match.view_name == 'recipient:create' %}active{% endif %}" href="{% url 'recipient:create' %}">Добавить получателя</a>
+        </li>
+        {% if perms.blog.add_blog %}
+        <li class="nav-item">
+            <a class="nav-item nav-link link-body-emphasis {% if request.resolver_match.view_name == 'blog:create' %}active{% endif %}" href="{% url 'blog:create' %}">Добавить блог</a>
+        </li>
+        {% endif %}
+        <li class="nav-item">
+            <a class="nav-item nav-link link-body-emphasis {% if request.resolver_match.view_name == 'mailing:list' %}active{% endif %}" href="{% url 'mailing:list' %}">Все сообщения</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-item nav-link link-body-emphasis {% if request.resolver_match.view_name == 'mailing:settings_list' %}active{% endif %}" href="{% url 'mailing:settings_list' %}">Планирование рассылок</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-item nav-link link-body-emphasis {% if request.resolver_match.view_name == 'mailing:create' %}active{% endif %}" href="{% url 'mailing:create' %}">Создание сообщения</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-item nav-link link-body-emphasis {% if request.resolver_match.view_name == 'blog:list' %}active{% endif %}" href="{% url 'blog:list' %}">Посты</a>
+        </li>
+        {% if user.is_superuser %}
+        <li class="nav-item">
+            <a class="nav-item nav-link link-body-emphasis" href="{% url 'admin:index' %}">Админ-панель</a>
+        </li>
+        {% endif %}
+        <form action="{% url 'users:logout' %}" method="post">
+            {% csrf_token %}
+            <a class="btn btn-outline-dark mt-1" href="{% url 'users:profile' %}">Профиль</a>
+            <button type="submit" class="btn btn-outline-dark mt-1">Выйти</button>
+        </form>
+        {% else %}
+        <a class="btn btn-outline-dark mt-1" href="{% url 'users:register' %}">Зарегистрироваться</a>
+        <a class="btn btn-outline-dark mt-1" href="{% url 'users:login' %}">Войти</a>
+        {% endif %}
+    </ul>
+</div>

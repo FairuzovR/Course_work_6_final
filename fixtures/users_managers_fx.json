@@ -1,0 +1,106 @@
+[
+{
+  "model": "users.user",
+  "pk": 3,
+  "fields": {
+      "password": "pbkdf2_sha256$720000$t10VTunWXMGmh3WaUvaxu4$Nge+v5s03XxB0ccuvLls7TtN2BJ+WTyzndngM5aIQtk=",
+      "last_login": "2024-06-21T14:51:30Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-21T11:32:20Z",
+      "email": "manager#1@yandex.ru",
+      "phone": null,
+      "avatar": "",
+      "country": null,
+      "token": "47294d68e775e40b4c39835e61bb6d20",
+      "groups": [],
+      "user_permissions": [
+          27,
+          25,
+          44,
+          43
+      ]
+  }
+},
+{
+  "model": "users.user",
+  "pk": 5,
+  "fields": {
+      "password": "pbkdf2_sha256$720000$t10VTunWXMGmh3WaUvaxu4$Nge+v5s03XxB0ccuvLls7TtN2BJ+WTyzndngM5aIQtk=",
+      "last_login": "2024-06-21T14:51:30Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-21T11:32:20Z",
+      "email": "manager#2@yandex.ru",
+      "phone": null,
+      "avatar": "",
+      "country": null,
+      "token": "47294d68e775e40b4c39835e61bb6d20",
+      "groups": [],
+      "user_permissions": [
+          27,
+          25,
+          44,
+          43
+      ]
+  }
+},
+{
+  "model": "users.user",
+  "pk": 6,
+  "fields": {
+      "password": "pbkdf2_sha256$720000$t10VTunWXMGmh3WaUvaxu4$Nge+v5s03XxB0ccuvLls7TtN2BJ+WTyzndngM5aIQtk=",
+      "last_login": "2024-06-21T14:51:30Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-21T11:32:20Z",
+      "email": "manager#3@yandex.ru",
+      "phone": null,
+      "avatar": "",
+      "country": null,
+      "token": "47294d68e775e40b4c39835e61bb6d20",
+      "groups": [],
+      "user_permissions": [
+          27,
+          25,
+          44,
+          43
+      ]
+  }
+},
+{
+  "model": "users.user",
+  "pk": 7,
+  "fields": {
+      "password": "pbkdf2_sha256$720000$t10VTunWXMGmh3WaUvaxu4$Nge+v5s03XxB0ccuvLls7TtN2BJ+WTyzndngM5aIQtk=",
+      "last_login": "2024-06-21T14:51:30Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-21T11:32:20Z",
+      "email": "managers#4@yandex.ru",
+      "phone": null,
+      "avatar": "",
+      "country": null,
+      "token": "47294d68e775e40b4c39835e61bb6d20",
+      "groups": [],
+      "user_permissions": [
+          27,
+          25,
+          44,
+          43
+      ]
+  }
+}
+]

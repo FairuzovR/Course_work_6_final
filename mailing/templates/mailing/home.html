@@ -1,0 +1,68 @@
+{% extends 'recipient/base.html' %}
+{% block content %}
+{% load my_tags %}
+<div class="row m-5">
+    <div class="col-md-4 text-center">
+        <div class="p-5 border rounded-5">
+            <h1>
+                <strong>{{ mailing_settings }}</strong>
+            </h1>
+            <h1>
+                Количество рассылок
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="p-5 border rounded-5">
+            <h1>
+                <strong>{{ active_mailings }}</strong>
+            </h1>
+            <h1>
+                Активных рассылок
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="p-5 border rounded-5">
+            <h1>
+                <strong>{{ recipient }}</strong>
+            </h1>
+            <h1>
+                Количество клиентов
+            </h1>
+        </div>
+    </div>
+</div>
+<div class="container px-3 py-3 pt-md-5 pb-md-4">
+    <div class="row text-center">
+        {% for object in blogs %}
+        <div class="col-4">
+            <div class="card box-shadow">
+                <div class="card-header">
+                    <h4 class="font-weight-normal">{{ object.title }}</h4>
+                </div>
+                <div class="card-body">
+                    <div class="img-container">
+                        <img class="card-img-top m-3" src="{{ object.image | media_filter }}" alt="" style='width: 300px; height: 300px;object-fit: cover;object-position: center;'>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="btn-group text-center">
+                            <a href="{% url 'blog:detail' object.pk %}" type="button"
+                               class="btn btn-lg btn-block btn-outline-dark">Подробнее</a>
+                            {% if user.is_superuser or perms.blog.change_blog %}
+                            <a href="{% url 'blog:update' object.pk %}" type="button"
+                               class="btn btn-lg btn-block btn-outline-warning">Изменить</a>
+                            {% endif %}
+                            {% if user.is_superuser or perms.blog.delete_blog %}
+                            <a href="{% url 'blog:delete' object.pk %}" type="button"
+                               class="btn btn-lg btn-block btn-outline-danger">Удалить</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'recipient/base.html' %}
+{% load my_tags %}
+{% block content %}
+<div class="container px-3 py-3 pt-md-5 pb-md-4">
+    <div class="row text-center">
+        {% for object in object_list %}
+        <div class="col-6">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">{{ object.title }}</h4>
+                </div>
+                <div class="card-body">
+                    <div class="img-container">
+                        <img class="card-img-top mb-3 p-2" src="{{ object.image | media_filter }}" alt="" style='width: 400px; height: 400px;object-fit: cover;object-position: center;'>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="btn-group text-center">
+                            <a href="{% url 'blog:detail' object.pk %}" type="button"
+                               class="btn btn-lg btn-block btn-outline-dark">Подробнее</a>
+                            {% if user.is_superuser or perms.blog.change_blog %}
+                            <a href="{% url 'blog:update' object.pk %}" type="button"
+                               class="btn btn-lg btn-block btn-outline-warning">Изменить</a>
+                            {% endif %}
+                            {% if user.is_superuser or perms.blog.delete_blog %}
+                            <a href="{% url 'blog:delete' object.pk %}" type="button"
+                               class="btn btn-lg btn-block btn-outline-danger">Удалить</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

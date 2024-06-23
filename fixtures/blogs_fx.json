@@ -1,0 +1,106 @@
+[
+{
+    "model": "blog.blog",
+    "pk": 1,
+    "fields": {
+        "title": "Blog #1",
+        "body": "Контент из 1 блога",
+        "image": "blog/51d45d570a7511676faf42cb846e5813.jpg",
+        "create_at": "2024-06-20T14:43:53.481Z",
+        "is_published": true,
+        "view_count": 9,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 2,
+    "fields": {
+        "title": "Blog #2",
+        "body": "Контент из 2 блога",
+        "image": "blog/wp5612079-anime-pc-full-hd-death-note-wallpapers.jpg",
+        "create_at": "2024-06-20T17:27:11.050Z",
+        "is_published": true,
+        "view_count": 10,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 3,
+    "fields": {
+        "title": "Blog #3",
+        "body": "Контент из 3 блога",
+        "image": "blog/1c8684b06bc7ad1e1f6b7b0099d87300.jpg",
+        "create_at": "2024-06-20T17:27:14.846Z",
+        "is_published": true,
+        "view_count": 5,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 4,
+    "fields": {
+        "title": "Blog #4",
+        "body": "Контент из 4 блога",
+        "image": "blog/js.jpg",
+        "create_at": "2024-06-20T17:27:18.454Z",
+        "is_published": true,
+        "view_count": 6,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 5,
+    "fields": {
+        "title": "Blog #5",
+        "body": "Контент из 5 блога",
+        "image": "blog/head_wallpaper2_GbqrcXI.jpg",
+        "create_at": "2024-06-20T17:27:23.756Z",
+        "is_published": true,
+        "view_count": 3,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 6,
+    "fields": {
+        "title": "Blog #6",
+        "body": "Контент из 6 блога",
+        "image": "blog/46ef500ca8dc42ac7f963d490f0dce4c.jpg",
+        "create_at": "2024-06-20T17:27:27.993Z",
+        "is_published": true,
+        "view_count": 7,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 7,
+    "fields": {
+        "title": "Blog #7",
+        "body": "Контент из 7 блога",
+        "image": "blog/7a444cf63feabb08f3b75550cfdefe07.jpg",
+        "create_at": "2024-06-20T17:27:32.981Z",
+        "is_published": true,
+        "view_count": 6,
+        "owner": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 8,
+    "fields": {
+        "title": "Blog #8",
+        "body": "Контент из 8 блога",
+        "image": "blog/35eef24242a32f5e0b958b5ffee48b2c_xP0xWzk.jpg",
+        "create_at": "2024-06-20T17:27:38.845Z",
+        "is_published": true,
+        "view_count": 4,
+        "owner": 1
+    }
+}
+]

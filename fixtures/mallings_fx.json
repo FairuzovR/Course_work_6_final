@@ -1,0 +1,34 @@
+[
+{
+    "model": "mailing.mailingsettings",
+    "pk": 1,
+    "fields": {
+        "first_datetime": "2024-06-22T21:19:30.002Z",
+        "last_sent_datetime": "2024-06-22T22:04:34.112Z",
+        "end_time": "2025-08-24T00:00:00Z",
+        "sending": "daily",
+        "message": 3,
+        "setting_status": "Started",
+        "owner": 2,
+        "recipients": [
+            4
+        ]
+    }
+},
+{
+    "model": "mailing.mailingsettings",
+    "pk": 2,
+    "fields": {
+        "first_datetime": "2024-06-22T21:19:30.002Z",
+        "last_sent_datetime": "2024-06-22T22:05:40.001Z",
+        "end_time": "2024-06-23T21:00:00Z",
+        "sending": "daily",
+        "message": 1,
+        "setting_status": "Started",
+        "owner": 4,
+        "recipients": [
+            5
+        ]
+    }
+}
+]

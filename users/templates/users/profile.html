@@ -1,0 +1,21 @@
+{% extends 'recipient/base.html' %}
+{% block content %}
+<div class="container">
+    <form class="form-signin" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% if request.user.avatar %}
+        <div class="img-container d-flex justify-content-center">
+            <img class="card-img-top mb-3 p-2" src="{{ request.user.avatar.url }}" alt="" style='width: 400px; height: 400px;object-fit: cover;object-position: center;'>
+        </div>
+        {% endif %}
+        <h1 class="text-center h3 mb-3 fw-normal">Профиль</h1>
+        {% for field in form %}
+        <div class="form-floating mb-3">
+            {{ field }}
+            <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+        </div>
+        {% endfor %}
+        <button class="btn btn-outline-dark w-100 mb-5" type="submit">Сохранить</button>
+    </form>
+</div>
+{% endblock %}

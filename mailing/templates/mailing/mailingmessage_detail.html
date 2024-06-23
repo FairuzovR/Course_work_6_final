@@ -1,0 +1,19 @@
+{% extends 'recipient/base.html' %}
+{% block content %}
+<div class="container text-center">
+    <div class="card">
+        <div class="card-body">
+            <h4>{{ object.title }}</h4>
+            <h5 class="fw-normal">{{ object.content }}</h5>
+            <p>{{ object.recipients }}</p>
+            {% if user == object.owner or user.is_superuser or perms.mailing.can_edit_message %}
+            <a class="btn btn-outline-warning w-100 mt-2 mb-2" href="{% url 'mailing:edit' object.pk %}" role="button">Изменить</a>
+            {% endif %}
+            {% if user == object.owner or user.is_superuser or perms.mailing.can_delete_message %}
+            <a class="btn btn-outline-danger w-100 mt-2 mb-2" href="{% url 'mailing:delete' object.pk %}" role="button">Удалить</a>
+            {% endif %}
+            <a class="btn btn-outline-dark w-100 mt-2 mb-2" href="{% url 'mailing:list' %}" role="button">Назад</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'recipient/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <form class="form-signin" method="post">
+            {% csrf_token %}
+            <h1 class="text-center h3 mb-3 fw-normal">Авторизация</h1>
+            {% if form.non_field_errors %}
+                <div class="alert alert-danger">
+                    {% for error in form.non_field_errors %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            
+            <div class="form-floating mb-3">
+                {{ form.username }}
+                <label for="floatingInput">Email</label>
+                {% for error in form.username.errors %}
+                    <div class="text-danger">{{ error }}</div>
+                {% endfor %}
+            </div>
+
+            <div class="form-floating mb-3">
+                {{ form.password }}
+                <label for="floatingPassword">Пароль</label>
+                {% for error in form.password.errors %}
+                    <div class="text-danger">{{ error }}</div>
+                {% endfor %}
+            </div>
+
+            <button class="btn btn-outline-dark w-100 py-2" type="submit">Войти</button>
+            <a class="btn btn-link link-secondary w-100" href="{% url 'users:reset_password' %}">Восстановить пароль</a>
+            <a class="btn btn-link link-secondary w-100" href="{% url 'users:register' %}">Нет аккаунта? Создать новый</a>
+        </form>
+    </div>
+{% endblock %}
