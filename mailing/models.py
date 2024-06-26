@@ -132,6 +132,9 @@ class MailingStatus(models.Model):
     class Meta:
         verbose_name = 'Статус отправки'
         verbose_name_plural = 'Статусы отправки'
+        permissions = [
+            ("can_view_status_malling", "Can view status malling"),
+        ]
 
     def __str__(self):
         return (f'{self.status} отправлялось {self.last_datetime}, \

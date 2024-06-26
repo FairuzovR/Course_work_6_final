@@ -7,7 +7,7 @@ from mailing.views import (MailingMessageCreateView, MailingMessageDeleteView,
                            MailingMessageUpdateView, MailingSettingsCreateView,
                            MailingSettingsDeleteView,
                            MailingSettingsDetailView, MailingSettingsListView,
-                           MailingSettingsUpdateView)
+                           MailingSettingsUpdateView, MailingStatusListView)
 
 app_name = MailingConfig.name
 
@@ -42,5 +42,10 @@ urlpatterns = [
       'settings_delete/<int:pk>/',
       MailingSettingsDeleteView.as_view(),
       name='settings_delete'
+    ),
+    path(
+      'status_mailing_list/',
+      MailingStatusListView.as_view(),
+      name='status_list'
     ),
 ]

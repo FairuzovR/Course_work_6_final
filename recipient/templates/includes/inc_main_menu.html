@@ -28,6 +28,9 @@
         <li class="nav-item">
             <a class="nav-item nav-link link-body-emphasis {% if request.resolver_match.view_name == 'blog:list' %}active{% endif %}" href="{% url 'blog:list' %}">Посты</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-item nav-link link-body-emphasis {% if request.resolver_match.view_name == 'mailing:status_list' %}active{% endif %}" href="{% url 'mailing:status_list' %}">Статус рассылок</a>
+        </li>
         {% if user.is_superuser %}
         <li class="nav-item">
             <a class="nav-item nav-link link-body-emphasis" href="{% url 'admin:index' %}">Админ-панель</a>

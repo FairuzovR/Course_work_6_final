@@ -1,0 +1,33 @@
+{% extends 'recipient/base.html' %}
+{% block content %}
+<div class="pricing-header m-3 mx-auto text-center">
+    <h1 class="display-4 fw-normal text-body-emphasis">Статусы рассылок</h1>
+</div>
+<div class="container text-center">
+    {% for mailing_status in object_list %}
+        {% if user == mailing_status.mailing_list.owner or user.is_superuser or perms.mailing.can_view_status_malling %}
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 {% if mailing_status.mailing_list.setting_status == 'Create' %}bg-primary
+                                                 {% elif mailing_status.mailing_list.setting_status == 'Started' %}bg-success
+                                                 {% elif mailing_status.mailing_list.setting_status == 'Done' %}bg-secondary
+                                                 {% endif %}">
+                        <h2 class="my-0 fw-normal">Статус: {{ mailing_status.mailing_list.setting_status }}</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title pricing-card-title">{{ mailing_status.message }}</p>
+                        <p class="card-title pricing-card-title">Для:
+                            {% for recipient in mailing_status.mailing_list.recipients.all %}
+                                {{ recipient.email }}
+                                <hr>
+                            {% endfor %}
+                        </p>
+                        <p class="card-title pricing-card-title">Владелец: {{ mailing_status.mailing_list.owner }}</p>
+                        <p class="card-title pricing-card-title">Последнее отправление: {{ mailing_status.mailing_list.last_sent_datetime }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

@@ -6,7 +6,7 @@ from django.views.generic import (CreateView, DeleteView, DetailView, ListView,
 
 from mailing.forms import (MailingMessageForm,
                            MailingSettingsForm)
-from mailing.models import MailingMessage, MailingSettings
+from mailing.models import MailingMessage, MailingSettings, MailingStatus
 from mailing.services import get_blog_from_cache
 from recipient.models import Recipient
 from django.utils import timezone
@@ -165,3 +165,17 @@ class MailingSettingsDeleteView(LoginRequiredMixin, DeleteView):
 
     def handle_no_permission(self):
         return redirect('mailing:settings_list')
+
+
+class MailingStatusListView(LoginRequiredMixin, ListView):
+    """
+    Представление для списка статусов
+    """
+    model = MailingStatus
+    permission_required = 'mailing.can_view_status_malling'
+
+    def handle_no_permission(self):
+        return redirect('mailing:settings_list')
+
+    def get_queryset(self):
+        return super().get_queryset().order_by('-last_datetime')[:20]
